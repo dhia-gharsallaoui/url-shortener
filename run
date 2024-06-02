@@ -1,0 +1,6 @@
+export URLSHORTENER_PORT=8080
+export URLSHORTENER_DOMAIN=localhost:8080
+export URLSHORTENER_EXPIRY=162h
+export URLSHORTENER_DATABASE_URL=postgres://postgres:example@localhost:5432/urlshortener
+go mod tidy && go build -o url-shortener cmd/api/main.go
+./url-shortener
